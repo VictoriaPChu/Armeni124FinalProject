@@ -5,26 +5,45 @@
 <script> 
 
 $(document).ready(function(){
-function square(stringthing) {
+function dothething(stringthing) {
+  console.log(stringthing)
   switch(stringthing) {
-    case "ApisoghamManug":
-    case "ManugApisogham":
-        return 1
+    case "ApisoghamAuthor":
+    case "AuthorApisogham":
+        return "<p> Situation: Hagop and Apisogham run into each other at a bar or a restaurant or something <br> Apisogham: Phew, finally, home sweet home <br> Author: The Author thinks the weather is nice today <br> Apisogham: Agh! Who are you? Have you come for my money? <br> Author: The Author understands how you feel, but is not here for your money <br> Apisogham: What do you want with me? Who are you anyway? <br> Author: I am Hagop Baronian, I am an author </p>  <button1> Be Hostile </button1>  <button2>Take advantage of the situation</button2> <div3><button3> Be Hangry </button3> "
         break;
+    case "PodkolyosinApisogham":
+    case "ApisoghamPodkolyosin":    
+    
     default:
         return 0
 }
 }
 
-console.log(square("ApisoghamManug"))
 var options = ""
+
     $(".button1").click(function(){
         $(".button1").fadeOut(1000, function() { $(this).remove(); });
          options=options+$(".button1").text()
 
         if($('#buttons').children('.button').length<9){
-        console.log(options)
+        console.log(options+"aasd")
 		$('#buttons').delay(1000).fadeOut(1000)
+                setTimeout(function(){
+                $('#Story').append(dothething(options))
+                $('#Story').delay(1000).fadeIn(1000)
+                $('#Story').on('click', 'button1', function() {
+  alert('<div1> <br>Apisogham: I know your kind! People like you have been asking me for my money all day. Leave me alone, you won’t get anything more out of me <br> Author: *leaves The author can’t quite remember what he wanted with Apisogham anyway <br> </div1>');
+});
+$('#Story').on('click', 'button2', function() {
+  alert('<div2><br> Apisogham: You’re an author? Can you base a character on me? <br> Author: The author thinks that is a good idea. <br> Apisogham: Make me a rich character. Make my character look for a wife. Make my character generous and well mannered  <br> Author: Okay. Why don’t you tell the author about yourself? Where did you just come from?  <br> Apisogham: Well you won’t believe the day I’ve been having! Let me tell you all about the people I’ve encountered on my trip.  <br> Author: Okay  <br> Narrator: and thats how the book Honorable Beggars came to be <br> </div2> ');
+});
+$('#Story').on('click', 'button3', function() {
+  alert('<div3><br> Apisogham: You know what, I’ve had a long day and I need food, and this time nobody is gonna stop me. <br> Author: But wait, the author thinks-- <br> Apisogham: Goodbye-- <br> Author: But the author has something to say! <br> Apisogham: Byeeee~</div3>');
+});
+},2000); 
+
+                
         }
             });
     $(".button2").click(function(){
@@ -155,11 +174,9 @@ if($('#buttons').children('.button').length<9){
 </head>
 <body>
  
-<div id="flip">Click to slide down panel</div>
-<div id="panel">Hello world!</div>
 
     <div id="particles-js">
-            <div id="login" style="margin-left: 32%;margin-right: 33%;">
+            <div id="login" style="margin-left: 22%;margin-right: 27%;">
       
         <div>
           <label for="username">Hello!</label>
@@ -170,13 +187,14 @@ if($('#buttons').children('.button').length<9){
         <div>
           <label for="password">Choose some characters:</label>
           <br>
+<div id = "Story"></div>
 <div id = "buttons" >
           <button class="button button1">Apisogham</button>
-<button class="button button2"> Manug</button>
-<button class="button button3">Author</button>
-<button class="button button4">Orgon</button>
-<button class="button button5">Elmire</button>
-<button class="button button6">Tartuffe</button>
+<button class="button button2">Author</button>
+<button class="button button3">Elmire</button>
+<button class="button button4">Tartuffe</button>
+<button class="button button5">Agafya</button>
+<button class="button button6">Podkolyosin</button>
 <button class="button button7">Fyokla</button>
 <button class="button button8">Agafya</button>
 <button class="button button9">Podkolyosin</button>
