@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script> 
+
+$(document).ready(function(){
+function dothething(stringthing) {
+  console.log(stringthing)
+  switch(stringthing) {
+    case "ApisoghamAuthor":
+    case "AuthorApisogham":
+        return "<p> Situation: Hagop and Apisogham run into each other at a bar or a restaurant or something <br> Apisogham: Phew, finally, home sweet home <br> Author: The Author thinks the weather is nice today <br> Apisogham: Agh! Who are you? Have you come for my money? <br> Author: The Author understands how you feel, but is not here for your money <br> Apisogham: What do you want with me? Who are you anyway? <br> Author: I am Hagop Baronian, I am an author </p><br><p>Click one:</p> <br> <button1> Be Hostile </button1> <br> <button2>Take advantage of the situation</button2><br> <div3><button3> Be Hangry </button3> "
+        break;
+    case "PodkolyosinApisogham":
+    case "ApisoghamPodkolyosin":    
+    
+    default:
+        return 0
+}
+}
+
+var options = ""
+
+    $(".button1").click(function(){
+        $(".button1").fadeOut(1000, function() { $(this).remove(); });
+         options=options+$(".button1").text()
+
+        if($('#buttons').children('.button').length<9){
+        console.log(options+"aasd")
+		$('#buttons').delay(1000).fadeOut(1000)
+                setTimeout(function(){
+                $('#Story').append(dothething(options))
+                $('#Story').delay(1000).fadeIn(1000)
+                $('#Story').on('click', 'button1', function() {
+  alert('<div1> <br>Apisogham: I know your kind! People like you have been asking me for my money all day. Leave me alone, you won’t get anything more out of me <br> Author: *leaves The author can’t quite remember what he wanted with Apisogham anyway <br> </div1>');
+});
+$('#Story').on('click', 'button2', function() {
+  alert('<div2><br> Apisogham: You’re an author? Can you base a character on me? <br> Author: The author thinks that is a good idea. <br> Apisogham: Make me a rich character. Make my character look for a wife. Make my character generous and well mannered  <br> Author: Okay. Why don’t you tell the author about yourself? Where did you just come from?  <br> Apisogham: Well you won’t believe the day I’ve been having! Let me tell you all about the people I’ve encountered on my trip.  <br> Author: Okay  <br> Narrator: and thats how the book Honorable Beggars came to be <br> </div2> ');
+});
+$('#Story').on('click', 'button3', function() {
+  alert('<div3><br> Apisogham: You know what, I’ve had a long day and I need food, and this time nobody is gonna stop me. <br> Author: But wait, the author thinks-- <br> Apisogham: Goodbye-- <br> Author: But the author has something to say! <br> Apisogham: Byeeee~</div3>');
+});
+},2000); 
+
+                
+        }
+            });
+    $(".button2").click(function(){
+$(".button2").fadeOut(1000, function() { $(this).remove(); });
+options=options+$(".button2").text()
+        if($('#buttons').children('.button').length<9){
+
+               console.log(options+"aasd")
+		$('#buttons').delay(1000).fadeOut(1000)
+                setTimeout(function(){
+                $('#Story').append(dothething(options))
+                $('#Story').delay(1000).fadeIn(1000)
+                $('#Story').on('click', 'button1', function() {
+  alert('<div1> <br>Apisogham: I know your kind! People like you have been asking me for my money all day. Leave me alone, you won’t get anything more out of me <br> Author: *leaves The author can’t quite remember what he wanted with Apisogham anyway <br> </div1>');
+});
+$('#Story').on('click', 'button2', function() {
+  alert('<div2><br> Apisogham: You’re an author? Can you base a character on me? <br> Author: The author thinks that is a good idea. <br> Apisogham: Make me a rich character. Make my character look for a wife. Make my character generous and well mannered  <br> Author: Okay. Why don’t you tell the author about yourself? Where did you just come from?  <br> Apisogham: Well you won’t believe the day I’ve been having! Let me tell you all about the people I’ve encountered on my trip.  <br> Author: Okay  <br> Narrator: and thats how the book Honorable Beggars came to be <br> </div2> ');
+});
+$('#Story').on('click', 'button3', function() {
+  alert('<div3><br> Apisogham: You know what, I’ve had a long day and I need food, and this time nobody is gonna stop me. <br> Author: But wait, the author thinks-- <br> Apisogham: Goodbye-- <br> Author: But the author has something to say! <br> Apisogham: Byeeee~</div3>');
+});
+},2000); 
+
+          }
+            });
+    $(".button3").click(function(){
+$(".button3").fadeOut(1000, function() { $(this).remove(); });
+options=options+$(".button3").text()
+
+        if($('#buttons').children('.button').length<9){
+        console.log($('#buttons').children('.button').length)
+		$('#buttons').delay(1000).fadeOut(1000)
+        }
+        
+    });
+    $(".button4").click(function(){
+$(".button4").fadeOut(1000, function() { $(this).remove(); });
+options=options+$(".button4").text()
+
+if($('#buttons').children('.button').length<9){
+        console.log($('#buttons').children('.button').length)
+		$('#buttons').delay(1000).fadeOut(1000)
+        }
+        
+    });
+    $(".button5").click(function(){
+$(".button5").fadeOut(1000, function() { $(this).remove(); });
+options=options+$(".button5").text()
+
+if($('#buttons').children('.button').length<9){
+        console.log($('#buttons').children('.button').length)
+		$('#buttons').delay(1000).fadeOut(1000)
+        }
+        
+    });
+    $(".button6").click(function(){
+$(".button6").fadeOut(1000, function() { $(this).remove(); });
+options=options+$(".button6").text()
+
+if($('#buttons').children('.button').length<9){
+        console.log($('#buttons').children('.button').length)
+		$('#buttons').delay(1000).fadeOut(1000)
+        }
+        
+    });
+    $(".button7").click(function(){
+$(".button7").fadeOut(1000, function() { $(this).remove(); });
+options=options+$(".button7").text()
+
+if($('#buttons').children('.button').length<9){
+        console.log($('#buttons').children('.button').length)
+		$('#buttons').delay(1000).fadeOut(1000)
+        }
+        
+    });
+    $(".button8").click(function(){
+$(".button8").fadeOut(1000, function() { $(this).remove(); });
+options=options+$(".button8").text()
+
+if($('#buttons').children('.button').length<9){
+        console.log($('#buttons').children('.button').length)
+		$('#buttons').delay(1000).fadeOut(1000)
+        }
+        
+    });
+
+    $(".button9").click(function(){
+$(".button9").fadeOut(1000, function() { $(this).remove(); });
+options=options+$(".button9").text()
+
+if($('#buttons').children('.button').length<9){
+        console.log($('#buttons').children('.button').length)
+		$('#buttons').delay(1000).fadeOut(1000)
+        }
+        
+    });
+});</script>
+<style> 
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Particles Webpage</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */ 
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.button5 {background-color: #555555;} /* Black */
+.button6 {background-color: #519209;}
+.button1 {background-color: #008CBA;} /* Blue */
+.button7 {background-color: #f44336;} /* Red */ 
+.button8 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.button9 {background-color: #555555;} /* Black */
+.button6 {background-color: #519209;}
+
+</style>
+</head>
+<body>
+ 
+
+    <div id="particles-js">
+            <div id="login" style="margin-left: 22%;margin-right: 27%;">
+      
+        <div>
+          <label for="username">Hello!</label>
+          <br>
+        
+        </div>
+
+        <div>
+          <label for="password">Choose some characters:</label>
+          <br>
+<div id = "Story"></div>
+<div id = "buttons" >
+          <button class="button button1">Apisogham</button>
+<button class="button button2">Author</button>
+<button class="button button3">Elmire</button>
+<button class="button button4">Tartuffe</button>
+<button class="button button5">Agafya</button>
+<button class="button button6">Podkolyosin</button>
+<button class="button button7">Fyokla</button>
+<button class="button button8">Agafya</button>
+<button class="button button9">Podkolyosin</button>
+
+        </div>
+</div>
+
+      
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <script>
+        particlesJS.load('particles-js', 'particles.json',
+        function(){
+            console.log('particles.json loaded...')
+        })
+    </script>
+</body>
+</html>
